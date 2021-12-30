@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-7|Set-A|Que-1</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(168, 199, 168);
+        color: rgb(109, 106, 100);
+        font-size: 25px;
+      }
+      .container {
+        margin-top: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="greet">0000</h1>
+    </div>
+    <script>
+      var greet = document.getElementById("greet");
+      var today = new Date();
+      var currentTime = today.getHours();
+      // alert(currentTime);
+      if(currentTime <= 12 && currentTime >= 0) {
+        greet.innerText = "Good Morning!";
+
+      } else if (currentTime == 12) {
+        greet.innerText = "Good Afternoon!";
+      } else {
+        greet.innerText = "Good Evening!";
+      }
+    </script>
+  </body>
+</html>
